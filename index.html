@@ -10,6 +10,12 @@
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,200&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- STYLE/CSS -->
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
@@ -28,25 +34,25 @@
         <div class="menu_song">
           <li class="songitem">
             <span>01</span>
-            <img src="/shoe.jpg" alt="" />
+            <img src="/img/better-khalid.jpeg" alt="" />
             <h5>
-              On my way
-              <div class="subtitle">Alan walker</div>
+              Better than this
+              <div class="subtitle">Khalid</div>
             </h5>
             <i class="bx playlistplay bx-play-circle" id="1"></i>
           </li>
           <li class="songitem">
             <span>02</span>
-            <img src="/shoe.jpg" alt="" />
+            <img src="/img/better-khalid.jpeg" alt="" />
             <h5>
-              On my way
-              <div class="subtitle">Alan walker</div>
+              Better than this
+              <div class="subtitle">Khalid</div>
             </h5>
             <i class="bx playlistplay bx-play-circle" id="2"></i>
           </li>
           <li class="songitem">
             <span>03</span>
-            <img src="/shoe.jpg" alt="" />
+            <img src="/img/better-khalid.jpeg" alt="" />
             <h5>
               On my way
               <div class="subtitle">Alan walker</div>
@@ -55,7 +61,7 @@
           </li>
           <li class="songitem">
             <span>04</span>
-            <img src="/shoe.jpg" alt="" />
+            <img src="/img/better-khalid.jpeg" alt="" />
             <h5>
               On my way
               <div class="subtitle">Alan walker</div>
@@ -64,7 +70,7 @@
           </li>
           <li class="songitem">
             <span>05</span>
-            <img src="/shoe.jpg" alt="" />
+            <img src="/img/better-khalid.jpeg" alt="" />
             <h5>
               On my way
               <div class="subtitle">Alan walker</div>
@@ -73,7 +79,7 @@
           </li>
           <li class="songitem">
             <span>06</span>
-            <img src="/shoe.jpg" alt="" />
+            <img src="/img/better-khalid.jpeg" alt="" />
             <h5>
               On my way
               <div class="subtitle">Alan walker</div>
@@ -82,7 +88,33 @@
           </li>
         </div>
       </div>
-      <div class="song_side"></div>
+      <div class="song_side">
+        <nav>
+          <ul>
+            <li>DISCOVER <span></span></li>
+            <li>MY LIBRARY</li>
+            <li>RADIO</li>
+          </ul>
+          <div class="search">
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search music..." />
+          </div>
+          <div class="user">
+            <img src="/20220412_211336.jpg" alt="user" title="user" />
+          </div>
+        </nav>
+        <div class="content">
+          <h1>Chris brown - Don't judge me</h1>
+          <p>
+            Just let the past, just be the past<br />
+            And focused on things that are gonna make us laugh
+          </p>
+          <div class="buttons">
+            <button>PLAY</button>
+            <button>DOWNLOAD</button>
+          </div>
+        </div>
+      </div>
       <div class="master_play">
         <div class="wave">
           <div class="wave1"></div>
@@ -96,17 +128,23 @@
         </h5>
         <div class="icon">
           <i class="bx bx-skip-previous"></i>
-        <i class="bx bx-play"></i>
-        <i class="bx bx-skip-next"></i>
+          <i class="bx bx-play"></i>
+          <i class="bx bx-skip-next"></i>
+        </div>
+        <span id="currentStart">0.00</span>
+        <div class="bar">
+          <input type="range" id="seek" min="0" value="0" max="100" />
+          <div class="bar2" id="bar2"></div>
+          <div class="dot"></div>
+        </div>
+        <span id="currentEnd">0.00</span>
+        <div class="vol">
+          <i class="bx bxs-volume-full"></i>
+          <input type="range" id="vol" min="0" value="30" max="100" />
+          <div class="vol_bar"></div>
+          <div class="dot" id="vol_dot"></div>
+        </div>
       </div>
-      <span id="currentStart">0.00</span>
-      <div class="bar">
-        <input type="range" id="seek" min="0" value="0" max="100" />
-        <div class="bar2" id="bar2"></div>
-        <div class="dot"></div>
-      </div>
-      <span id="currentEnd">0.00</span>
     </header>
   </body>
 </html>
-<i class="bx bx-chevron-up scrolltop__icon"></i>
