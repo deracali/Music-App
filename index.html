@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App</title>
+    <!-- BOX ICON -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- STYLE/CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="menu_side">
+        <h1>Playlist</h1>
+        <div class="playlist">
+          <h4 class="active">
+            <span></span> <i class="bx bx-music"></i> Playlist
+          </h4>
+          <h4><span></span> <i class="bx bx-music"></i> Last Listening</h4>
+          <h4><span></span> <i class="bx bx-music"></i> Recommended</h4>
+        </div>
+        <div class="menu_song">
+          <li class="songitem">
+            <span>01</span>
+            <img src="/shoe.jpg" alt="" />
+            <h5>
+              On my way
+              <div class="subtitle">Alan walker</div>
+            </h5>
+            <i class="bx playlistplay bx-play-circle" id="1"></i>
+          </li>
+          <li class="songitem">
+            <span>02</span>
+            <img src="/shoe.jpg" alt="" />
+            <h5>
+              On my way
+              <div class="subtitle">Alan walker</div>
+            </h5>
+            <i class="bx playlistplay bx-play-circle" id="2"></i>
+          </li>
+          <li class="songitem">
+            <span>03</span>
+            <img src="/shoe.jpg" alt="" />
+            <h5>
+              On my way
+              <div class="subtitle">Alan walker</div>
+            </h5>
+            <i class="bx playlistplay bx-play-circle" id="3"></i>
+          </li>
+          <li class="songitem">
+            <span>04</span>
+            <img src="/shoe.jpg" alt="" />
+            <h5>
+              On my way
+              <div class="subtitle">Alan walker</div>
+            </h5>
+            <i class="bx playlistplay bx-play-circle" id="4"></i>
+          </li>
+          <li class="songitem">
+            <span>05</span>
+            <img src="/shoe.jpg" alt="" />
+            <h5>
+              On my way
+              <div class="subtitle">Alan walker</div>
+            </h5>
+            <i class="bx playlistplay bx-play-circle" id="5"></i>
+          </li>
+          <li class="songitem">
+            <span>06</span>
+            <img src="/shoe.jpg" alt="" />
+            <h5>
+              On my way
+              <div class="subtitle">Alan walker</div>
+            </h5>
+            <i class="bx playlistplay bx-play-circle" id="6"></i>
+          </li>
+        </div>
+      </div>
+      <div class="song_side"></div>
+      <div class="master_play">
+        <div class="wave">
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+        </div>
+        <img src="/shoe.jpg" alt="" />
+        <h5>
+          On my way<br />
+          <div class="subtitle">Alan walker</div>
+        </h5>
+        <div class="icon">
+          <i class="bx bx-skip-previous"></i>
+        <i class="bx bx-play"></i>
+        <i class="bx bx-skip-next"></i>
+      </div>
+      <span id="currentStart">0.00</span>
+      <div class="bar">
+        <input type="range" id="seek" min="0" value="0" max="100" />
+        <div class="bar2" id="bar2"></div>
+        <div class="dot"></div>
+      </div>
+      <span id="currentEnd">0.00</span>
+    </header>
+  </body>
+</html>
+<i class="bx bx-chevron-up scrolltop__icon"></i>
